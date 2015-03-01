@@ -1,10 +1,7 @@
-### carstenschaefer.github.io
-Demos of our plugins we've developed
-
-## Welcome to Demo page for our Redactor Plugins.
+### Welcome to Demo page for our Redactor Plugins.
 Here you can find demos of our plugins we've developed for the fantastic [Redactor](http://imperavi.com/redactor/), a WYSIWYG rich-text editor made by [Imperavi](http://imperavi.com/).
 
-#Our Plugins are:
+##Our Plugins are:
 * [redactor-contexttoolbar](https://github.com/carstenschaefer/redactor-contexttoolbar)
 * [redactor-fontSize](https://github.com/carstenschaefer/redactor-fontSize)
 * [redactor-fontFamily](https://github.com/carstenschaefer/redactor-fontFamily)
