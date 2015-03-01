@@ -112,7 +112,37 @@ Press CTRL + F to show popup or use toolbar button.
 				}
 			});
 			
+			$("#editor-FontSize").redactor({
+				plugins: ['fontSize'],
+				fontSize: {
+					defaultSize : "18"
+				}
+			});
 			
+			$("#editor-Autolist").redactor({
+				plugins: ['autolist']
+			});
+			
+			$("#editor-Contexttoolbar").redactor({
+				plugins: ['contexttoolbar'],
+				contexttoolbar:{
+                        	scroll: false,
+                                buttons:[
+                                	'formatting',
+                              		'bold',
+                              		'italic',
+                              		'unorderedlist',
+                              		'orderedlist',
+                              		'outdent',
+                              		'indent',
+                              		'alignment'
+                            	]
+                            }
+			});
+			
+			$("#editor-SearchReplace").redactor({
+				plugins: ['searchreplace']
+			});
 		});
   </script>
 		
