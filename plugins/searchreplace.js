@@ -81,9 +81,9 @@ if (!RedactorPlugins) var RedactorPlugins = {};
       + '<input type="text" size="5" id="redactor-search-replace-search" required />'
       + '<label>' + 'Replace' + '</label>'
       + '<input type="text" size="5" id="redactor-search-replace-replace" required />'
-      + '<input style="margin-top:50px; display:block;" type="checkbox" id="redactor-search-replace-ignore-case" /><label for="redactor-search-replace-ignore-case" style="display:inline-block;">' + 'Ignore Case' + '</label>'
-      + '<input style="margin-top:20px; display:block;" type="checkbox" id="redactor-search-replace-word-boundary" /><label for="redactor-search-replace-word-boundary" style="display:inline-block;">' + 'Match at Word Boundary' + '</label>'
-      + '<input style="margin-top:20px; display:block;" type="checkbox" id="redactor-search-replace-only-selection" /><label for="redactor-search-replace-word-boundary" style="display:inline-block;">' + 'Search Only in Selection' + '</label>'
+      + '<div style="display:inline-block;"><input style="margin-top:50px;" type="checkbox" id="redactor-search-replace-ignore-case" /><label for="redactor-search-replace-ignore-case">' + 'Ignore Case' + '</label></div>'
+      + '<div style="display:inline-block;"><input style="margin-top:20px;" type="checkbox" id="redactor-search-replace-word-boundary" /><label for="redactor-search-replace-word-boundary">' + 'Match at Word Boundary' + '</label></div>'
+      + '<div style="display:inline-block;"><input style="margin-top:20px;" type="checkbox" id="redactor-search-replace-only-selection" /><label for="redactor-search-replace-word-boundary">' + 'Search Only in Selection' + '</label></div>'
       + '</section>';
     }
 
