@@ -23,6 +23,11 @@
 				width:auto;
 				text-transform: capitalize;
 			}
+			
+			.redactor-toolbar li .re-icon.re-fontSizeList{
+				width:auto;
+				text-transform: capitalize;
+			}
 		</style>
 		
 		
@@ -50,9 +55,9 @@
 <a id="our-plugins-are" class="anchor" href="#our-plugins-are" aria-hidden="true"><span class="octicon octicon-link"></span></a>Our Plugins are:</h2>
 
 <ul>
-<li><a href="https://github.com/carstenschaefer/redactor-contexttoolbar">redactor-contexttoolbar</a></li>
-<li><a href="https://github.com/carstenschaefer/redactor-fontSize">redactor-fontSize</a></li>
 <li><a href="https://github.com/carstenschaefer/redactor-fontFamily">redactor-fontFamily</a></li>
+<li><a href="https://github.com/carstenschaefer/redactor-fontSize">redactor-fontSize</a></li>
+<li><a href="https://github.com/carstenschaefer/redactor-contexttoolbar">redactor-contexttoolbar</a></li>
 <li><a href="https://github.com/carstenschaefer/redactor-autolist">redactor-autolist</a></li>
 <li><a href="https://github.com/carstenschaefer/redactor-searchreplace">redactor-searchreplace</a></li>
 </ul>
@@ -60,8 +65,25 @@
 
 <h2>
 <a id="demoFontFamily" class="anchor" href="#demoFontFamily" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo Font Family:</h2>
-
 <div id="editor-FontFamily"></div>
+
+<h2>
+<a id="demoFontSize" class="anchor" href="#demoFontSize" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo Font Size:</h2>
+<div id="editor-FontSize"></div>
+
+<h2>
+<a id="demoContexttoolbar" class="anchor" href="#demoContexttoolbar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo Context Toolbar:</h2>
+<div id="editor-Contexttoolbar"></div>
+
+<h2>
+<a id="demoAutolist" class="anchor" href="#demoAutolist" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo Autolist:</h2>
+Type * or - for an unordered list and 1. for an ordered list.
+<div id="editor-Autolist"></div>
+
+<h2>
+<a id="demoSearchReplace" class="anchor" href="#demoSearchReplace" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo Search and Replace:</h2>
+Press CTRL + F to show popup or use toolbar button.
+<div id="editor-Searchreplace"></div>
 
    </section>
        <aside id="sidebar">
@@ -75,8 +97,10 @@
   
   
   <script type="text/javascript" src="plugins/fontFamily.js"></script>
-
-  "
+  <script type="text/javascript" src="plugins/fontSize.js"></script>
+  <script type="text/javascript" src="plugins/contexttoolbar.js"></script>
+  <script type="text/javascript" src="plugins/autolist.js"></script>
+  <script type="text/javascript" src="plugins/searchreplace.js"></script>
    
   <script type="text/javascript">
 		$(function(){
@@ -87,8 +111,40 @@
 					fonts: ['Arial', 'Comic Sans MS', 'Courier New', 'Georgia', 'Helvetica', 'Impact', 'Times New Roman', 'Monospace']
 				}
 			});
+			
+			$("#editor-FontSize").redactor({
+				plugins: ['fontSize'],
+				fontSize: {
+					defaultSize : "18"
+				}
+			});
+			
+			$("#editor-Autolist").redactor({
+				plugins: ['autolist']
+			});
+			
+			$("#editor-Contexttoolbar").redactor({
+				plugins: ['contexttoolbar'],
+				contexttoolbar:{
+                        	scroll: false,
+                                buttons:[
+                                	'formatting',
+                              		'bold',
+                              		'italic',
+                              		'unorderedlist',
+                              		'orderedlist',
+                              		'outdent',
+                              		'indent',
+                              		'alignment'
+                            	]
+                            ]},
+			});
+			
+			$("#editor-SearchReplace").redactor({
+				plugins: ['searchreplace']
+			});
 		});
-</script>
+  </script>
 		
   </body>
 </html>
