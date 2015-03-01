@@ -8,12 +8,35 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
+    
+    <link href="https://www.dropbox.com/sh/ihoo4qpj8ibm99l/AADHN2O6DY4logCel42Zt49sa?dl=0/redactor.css" type="text/css" rel="stylesheet" />
+   
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <title>Redactor-Plugins by carstenschaefer</title>
+    
+    <!-- demo fontFamily -->
+    <style type="text/css">
+			.redactor-toolbar li .re-icon.re-fontList{
+				width:auto;
+				text-transform: capitalize;
+			}
+		</style>
+		
+		<script type="text/javascript">
+		$(function(){
+			$("#editor_FontFamily").redactor({
+				plugins: ['fontFamily'],
+				fontFamily: {
+					defaultFont : 'Georgia',
+					fonts: ['Arial', 'Comic Sans MS', 'Courier New', 'Georgia', 'Helvetica', 'Impact', 'Times New Roman', 'Monospace']
+				}
+			});
+		});
+		</script>
+		
   </head>
 
   <body>
@@ -45,6 +68,15 @@
 </ul>
         </section>
 
+<h2>
+<a id="demoFontFamily" class="anchor" href="#demoFontFamily" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo Font Family:</h2>
+
+<div id="editor-FontFamily"></div>
+
+
+
+
+
         <aside id="sidebar">
 
 
@@ -53,9 +85,10 @@
       </div>
     </div>
 
-  
-  
-   <script type="text/javascript" src="https://www.dropbox.com/sh/ihoo4qpj8ibm99l/AADHN2O6DY4logCel42Zt49sa?dl=0/redactor.min.js"></script>
-   
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="https://www.dropbox.com/sh/ihoo4qpj8ibm99l/AADHN2O6DY4logCel42Zt49sa?dl=0/redactor.min.js"></script>
+  <script type="text/javascript" src="https://github.com/carstenschaefer/redactor-fontFamily/blob/master/fontFamily.js"></script>
+    
+    
   </body>
 </html>
