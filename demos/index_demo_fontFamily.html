@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    
+    <link href="https://www.dropbox.com/sh/ihoo4qpj8ibm99l/AACvtN2V-T5hjh4FN1_8Slkna/redactor.css?dl=1" type="text/css" rel="stylesheet" />
+   
+ 
+    <title>Redactor-Plugins by carstenschaefer</title>
+    
+    <!-- demo fontFamily & FontSize -->
+    <style type="text/css">
+			.redactor-toolbar li .re-icon.re-fontList{
+				width:auto;
+				text-transform: capitalize;
+			}
+			
+			.redactor-toolbar li .re-icon.re-fontSizeList{
+				width:auto;
+				text-transform: capitalize;
+			}
+		</style>
+		
+		
+		
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Redactor-Plugin: fontFamily</h1>
+        <h2>Demo of our plugin we&#39;ve developed for Redactor, a WYSIWYG rich-text editor made by Imperavi</h2>
+        <a href="https://github.com/carstenschaefer/redactor-fontFamily" class="button"><small>Fork me on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h3>
+
+
+<h2>
+<a id="demoFontFamily" class="anchor" href="#demoFontFamily" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo Font Family:</h2>
+<div id="editor-FontFamily"></div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="https://www.dropbox.com/sh/ihoo4qpj8ibm99l/AAAgEaoRC3nyq-GG_UvWw7V6a/redactor.min.js?dl=1"></script>
+  
+  
+  <script type="text/javascript" src="plugins/fontFamily.js"></script>
+ 
+   
+  <script type="text/javascript">
+		$(function(){
+			$("#editor-FontFamily").redactor({
+				plugins: ['fontFamily'],
+				fontFamily: {
+					defaultFont : 'Georgia',
+					fonts: ['Arial', 'Comic Sans MS', 'Courier New', 'Georgia', 'Helvetica', 'Impact', 'Times New Roman', 'Monospace']
+				}
+			});
+			
+			
+		});
+  </script>
+		
+  </body>
+</html>
