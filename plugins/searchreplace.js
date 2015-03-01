@@ -81,9 +81,9 @@ if (!RedactorPlugins) var RedactorPlugins = {};
       + '<input type="text" size="5" id="redactor-search-replace-search" required />'
       + '<label>' + 'Replace' + '</label>'
       + '<input type="text" size="5" id="redactor-search-replace-replace" required />'
-      + '<div><input type="checkbox" id="redactor-search-replace-ignore-case" />' + 'Ignore Case' + '</label></div>'
-      + '<div><input type="checkbox" id="redactor-search-replace-word-boundary" />' + 'Match at Word Boundary' + '</label></div>'
-      + '<div><input type="checkbox" id="redactor-search-replace-only-selection" />' + 'Search Only in Selection' + '</label></div>'
+      + '<input style="display: block" type="checkbox" id="redactor-search-replace-ignore-case" />' + 'Ignore Case' + '</label>'
+      + '<input style="display: block" type="checkbox" id="redactor-search-replace-word-boundary" />' + 'Match at Word Boundary' + '</label>'
+      + '<input style="display: block" type="checkbox" id="redactor-search-replace-only-selection" />' + 'Search Only in Selection' + '</label>'
       + '</section>';
     }
 
