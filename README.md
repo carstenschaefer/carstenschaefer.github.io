@@ -12,4 +12,4 @@ Start here: [Demo-Page](http://carstenschaefer.github.io)
 ##Here our commercial Plugins:
 * [DrawerJs - A HTML canvas editor. Just like a WYSIWYG editor but for canvas](https://www.drawerjs.com)
 * [ImagerJs - An image uploader with basic image editing like rotate, crop, resize](https://www.imagerjs.com)
-* 
+
