@@ -1,5 +1,5 @@
 ### Welcome to Demo page for our Redactor Plugins.
-Here you can find demos of our plugins we've developed for the fantastic [Redactor](http://imperavi.com/redactor/), a WYSIWYG rich-text editor made by [Imperavi](http://imperavi.com/).
+Here you can find demos of our plugins we've developed for the fantastic [Redactor](http://imperavi.com/redactor/), a WYSIWYG rich-text editor made by [Imperavi](http://imperavi.com/). These plugins are tested for the mature version of redactor. We are working on updating them to newer version called Redactor II.
 
 Start here: [Demo-Page](http://carstenschaefer.github.io)
 
