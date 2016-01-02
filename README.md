@@ -9,6 +9,7 @@ Start here: [Demo-Page](http://carstenschaefer.github.io)
 * [redactor-autolist](https://github.com/carstenschaefer/redactor-autolist)
 * [redactor-searchreplace](https://github.com/carstenschaefer/redactor-searchreplace)
 * [redactor-copyformat](https://github.com/carstenschaefer/redactor-copyformat)
+* [redactor-todo](https://github.com/carstenschaefer/redactor-todo)
 
 ##Here our commercial Plugins:
 * [DrawerJs - A HTML canvas editor. Just like a WYSIWYG editor but for canvas](https://www.drawerjs.com)
