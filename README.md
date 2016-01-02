@@ -8,7 +8,8 @@ Start here: [Demo-Page](http://carstenschaefer.github.io)
 * [redactor-fontFamily](https://github.com/carstenschaefer/redactor-fontFamily)
 * [redactor-autolist](https://github.com/carstenschaefer/redactor-autolist)
 * [redactor-searchreplace](https://github.com/carstenschaefer/redactor-searchreplace)
-
+* [redactor-copyformat](https://github.com/carstenschaefer/redactor-copyformat)
+* 
 ##Here our commercial Plugins:
 * [DrawerJs - A HTML canvas editor. Just like a WYSIWYG editor but for canvas](https://www.drawerjs.com)
 * [ImagerJs - An image uploader with basic image editing like rotate, crop, resize](https://www.imagerjs.com)
