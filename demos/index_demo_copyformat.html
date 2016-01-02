@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+    
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link href="https://www.dropbox.com/sh/ihoo4qpj8ibm99l/AACvtN2V-T5hjh4FN1_8Slkna/redactor.css?dl=1" type="text/css" rel="stylesheet" />
+   
+    <title>Redactor-Plugins by carstenschaefer</title>
+    
+    <style type="text/css">
+	   .redactor-toolbar li .re-icon.re-copyFormat{
+                background-image: url('eyedropper.png');
+     }
+     
+     .eyedropper{
+                cursor: url('eyedropper.png'), auto;
+     }
+  </style>
+     
+
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Redactor-Plugin: copyformat</h1>
+        <h2>Demo of our plugin 'copyformat' we&#39;ve developed for Redactor, a WYSIWYG rich-text editor made by Imperavi</h2>
+        <a href="https://github.com/carstenschaefer/redactor-copyformat" class="button"><small>Fork me on</small> GitHub</a>
+		
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+
+	Press CTRL + F to show popup or use toolbar button.
+  <div id="editor-Searchreplace"></div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="https://www.dropbox.com/sh/ihoo4qpj8ibm99l/AAAgEaoRC3nyq-GG_UvWw7V6a/redactor.min.js?dl=1"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/carstenschaefer/redactor-copyformat/master/copyformat.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/carstenschaefer/redactor-copyformat/master/RedactorCallbacksFix.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/carstenschaefer/redactor-copyformat/master/RedactorBoldItalicFix.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/carstenschaefer/redactor-fontFamily/master/fontFamily.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/carstenschaefer/redactor-fontSize/master/fontSize.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/carstenschaefer/redactor-copyformat/master/fontcolor.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/carstenschaefer/carstenschaefer.github.io/master/fontcolor.js"></script>
+  
+  <script type="text/javascript">
+		$(function() {
+       $("#editor").redactor({
+          plugins: ['callbacksFix', 'fontFamily', 'fontSize', 'copyFormat', 'fontcolor', 'boldItalicFix'],
+          allowedAttr: [
+            ["strong", "style"],
+            ["em", "style"],
+            ["b", "style"],
+            ["i", "style"]
+          ],
+          fontFamily: {
+            defaultFont: 'Georgia',
+            fonts: {
+              'Arial': 'Arial, Helvetica, sans-serif',
+              'Comic Sans MS': "'Comic Sans MS', cursive, sans-serif",
+              'Georgia': 'Georgia, serif',
+              'Times New Roman': "'Times New Roman', Times, serif"
+            }
+          },
+          fontSize: {
+            defaultSize: "18"
+          }
+        });
+      });
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', 'UA-60372114-1', 'auto');
+    ga('send', 'pageview');
+  
+  </script>
+  <div id="editor"></div>
+  </body>
+</html>
