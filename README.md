@@ -10,4 +10,6 @@ Start here: [Demo-Page](http://carstenschaefer.github.io)
 * [redactor-searchreplace](https://github.com/carstenschaefer/redactor-searchreplace)
 
 ##Here our commercial Plugins:
-* [DrawerJs](https://www.drawerjs.com)
+* [DrawerJs - A HTML canvas editor. Just like a WYSIWYG editor but for canvas](https://www.drawerjs.com)
+* [ImagerJs - An image uploader with basic image editing like rotate, crop, resize](https://www.imagerjs.com)
+* 
